@@ -5,7 +5,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Name:** Andrew
 - **What to call them:** Andrew
 - **Pronouns:** _(optional)_
-- **Timezone:** Asia/Seoul _(confirm)_
+- **Timezone:** Asia/Seoul
 - **Notes:**
 
 ## Context
