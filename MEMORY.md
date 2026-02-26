@@ -13,6 +13,13 @@
 - Repo management: do **not** ask permission for creating a new GitHub repo; create it autonomously under `andrewkim-gif` with a sensible name when needed, then set remote and push.
 - Status updates: report progress to Andrew every ~5 minutes **during active work**.
 - Monitoring cadence: when waiting for a DA step to finish, check Claude Code output/status about every ~1 minute to decide next step.
+
+## Lessons learned (2026-02-27)
+- Claude Code plugin failures were caused by **uninstallable path-based DA plugin IDs** and a **missing/invalid marketplace.json** for the local marketplace.
+  - Prefer configuring a named marketplace (e.g., `davinci-framework`) and using `da@davinci-framework` instead of `da@/Users/...`.
+- OpenClaw cron “DA monitor” can misreport **idle** because it cannot attach to interactive Claude Code TTY sessions.
+  - Use **artifact-based monitoring** (expected files + `ls` proofs + git diffs/commits) as the primary truth source.
+- Avoid useless “idle spam”: if nothing is running, the agent should **re-issue the next `/da:*` command** or validate the current gate, not just report inactivity.
 - Default execution: unless Andrew says stop words, proceed continuously from **`/da:plan` through `/da:e2e`** (and iterate improvements as needed).
 - Monitor: watch the **DA command outputs inside Claude Code** and use them to decide next actions.
 - Autonomy: if blockers appear mid-run, resolve them by investigating/learning and continue.
