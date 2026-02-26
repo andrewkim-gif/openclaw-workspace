@@ -11,6 +11,7 @@
 - Stack preferences to reflect in plan/system: Next.js (frontend), Go (if server needed), Vercel (deploy), Supabase (BaaS).
 - Git discipline: commit work in units and push to Andrew’s GitHub (`https://github.com/andrewkim-gif/...`) as we go.
 - Status updates: report progress to Andrew every ~5 minutes **during active work**.
+- Monitoring cadence: when waiting for a DA step to finish, check Claude Code output/status about every ~1 minute to decide next step.
 - Default execution: unless Andrew says stop words, proceed continuously from **`/da:plan` through `/da:e2e`** (and iterate improvements as needed).
 - Monitor: watch the **DA command outputs inside Claude Code** and use them to decide next actions.
 - Autonomy: if blockers appear mid-run, resolve them by investigating/learning and continue.
