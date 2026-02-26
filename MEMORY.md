@@ -10,6 +10,7 @@
 - Workspace convention: for every new task create `~/Desktop/work/<project-folder>` and work inside it.
 - Stack preferences to reflect in plan/system: Next.js (frontend), Go (if server needed), Vercel (deploy), Supabase (BaaS).
 - Git discipline: commit work in units and push to Andrew’s GitHub (`https://github.com/andrewkim-gif/...`) as we go.
+- Repo management: do **not** ask permission for creating a new GitHub repo; create it autonomously under `andrewkim-gif` with a sensible name when needed, then set remote and push.
 - Status updates: report progress to Andrew every ~5 minutes **during active work**.
 - Monitoring cadence: when waiting for a DA step to finish, check Claude Code output/status about every ~1 minute to decide next step.
 - Default execution: unless Andrew says stop words, proceed continuously from **`/da:plan` through `/da:e2e`** (and iterate improvements as needed).
